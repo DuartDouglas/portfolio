@@ -5,8 +5,9 @@ const menu = document.getElementById("nav");
 
 menu.innerHTML = `
   <nav>
-    <a href="index.html" data-link>Home</a>
-    <a href="about.html" data-link>Sobre</a>
-    <a href="contact.html" data-link>Contato</a>
+    <a href="index.html" data-link>Sobre mim</a>
+     <a href="portfolio.html" data-link>Portfólio</a>
+    <a href="formacao.html" data-link>Formação</a>
+    <a href="contato.html" data-link>Contato</a>
   </nav>
 `;
