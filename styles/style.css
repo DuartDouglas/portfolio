@@ -53,7 +53,35 @@
   width: 100%;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav nav {
+  display: none;
+}
+
+#nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#nav button img {
+  width: 2.5rem;
+}
+
+#nav #btnOpenMenu.hide {
+  display: none;
+}
+#nav #btnCloseMenu.hide {
+  display: none;
+}
+
+#nav nav.show {
+  display: flex;
+  flex-direction: column;
+  padding-block: 2rem;
 }
 
 nav a {
@@ -64,7 +92,9 @@ nav a {
   font-weight: 500;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active,
+nav a:focus {
   background: #6a6a6a;
 }
 
@@ -191,7 +221,6 @@ main {
   padding: 0;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   width: 100%;
   gap: 1.25rem;
 }
@@ -254,7 +283,6 @@ main {
 }
 
 /* Página formação */
-
 #formation .header {
   text-align: center;
   margin-bottom: 2rem;
@@ -379,8 +407,19 @@ main {
   opacity: 0.8;
 }
 
-/* === Tablet e Desktop */
+/* === Layout para Tablet e Desktop */
 @media (min-width: 768px) {
+  #nav nav {
+    display: flex;
+  }
+
+  #nav #btnOpenMenu {
+    display: none;
+  }
+  #nav #btnCloseMenu {
+    display: none;
+  }
+
   /* Pagina Portfolio */
   #portfolio .project-list {
     flex-direction: row;
