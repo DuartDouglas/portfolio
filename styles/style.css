@@ -241,3 +241,16 @@ main {
   padding: 0.4rem 0.8rem;
   text-align: center;
 }
+
+/* === Tablet e Desktop */
+
+@media (min-width: 768px) {
+  #portfolio .project-list {
+    justify-content: center;
+    max-width: 1200px;
+    gap: 2rem;
+  }
+  #portfolio .project-item {
+    max-width: 350px;
+  }
+}
