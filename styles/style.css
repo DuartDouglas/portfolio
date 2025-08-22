@@ -1,6 +1,6 @@
 :root {
   --primary-color: #16181d;
-  --secondary-color: #393a46;
+  --secondary-color: #282a36;
   --emphasis-color: #27ae60;
   --text-color: #c0c4ce;
   --white-color: #ffffff;
@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  list-style: none;
 }
 
 /* Fonts family */
@@ -68,10 +69,13 @@ nav a:hover {
 }
 
 main {
+  background-color: var(--primary-color);
   padding: 7rem 1.25rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--text-color);
+  min-height: 100vh;
 }
 
 /* Página Sobre mim (Home do site) */
@@ -79,7 +83,6 @@ main {
   background-image: url(../assets/background-home.png);
   background-position: left top;
   background-size: contain;
-  color: var(--text-color);
 }
 
 #home > div {
@@ -162,3 +165,79 @@ main {
 }
 
 /* Página Portfolio */
+#portfolio .portfolio-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#portfolio .portfolio-header h1 {
+  font-size: 1.5rem;
+  color: var(--emphasis-color);
+  margin-bottom: 0.5rem;
+}
+
+#portfolio .portfolio-header p {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+}
+
+#portfolio .portfolio-header p span {
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+#portfolio .project-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+#portfolio .project-item {
+  background-color: var(--secondary-color);
+  padding: 0.8rem;
+  border-radius: 7px;
+}
+
+#portfolio .project-item a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#portfolio .project-item img {
+  border-radius: 7px;
+  width: 100%;
+}
+
+#portfolio .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+#portfolio .project-item .tech-list li {
+  font-family: "Inconsolata", monospace !important;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+#portfolio .project-item .tech-list li img {
+  width: 16px;
+  height: 16px;
+}
+
+#portfolio .project-item .link-caption {
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  color: var(--emphasis-color);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+}
