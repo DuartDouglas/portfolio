@@ -1,5 +1,5 @@
 // CARREGAMENTO DE MENU
-// Pego o elemento com ID "nav" e usando innerHTML carrega o Menu em todas as páginas que possuem esse "ID"
+// Pega elemento com ID "nav" e usando innerHTML carrega o Menu em todas as páginas que possuem esse "ID"
 // O HTML do Menu é definido como uma string e atribuído ao innerHTML do elemento
 const menu = document.getElementById("nav");
 

@@ -30,7 +30,7 @@
 /* Font sizes */
 .font-1 {
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.3rem;
   font-weight: 400;
 }
 
@@ -239,8 +239,13 @@ main {
   gap: 0.8rem;
 }
 
+#portfolio .project-item a:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+
 #portfolio .project-item .img-container {
-  width: 100%;
+  border-radius: 7px;
 }
 
 #portfolio .project-item .img-container img {
@@ -252,6 +257,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+}
+
+#portfolio .link-icon {
+  float: right;
+}
+
+#portfolio .link-icon img {
+  width: 15px;
 }
 
 #portfolio .tech-list {
@@ -436,12 +449,12 @@ main {
   }
 
   #portfolio .project-item .img-container {
-    width: 40%;
+    width: 50%;
   }
 
   #portfolio .project-item .project-info {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
   }
 }
